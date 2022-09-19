@@ -1,0 +1,24 @@
+// java program for checking eligibility for voting
+import java.util.*;
+
+class first {
+    public static void main(String[] args) {
+    
+    //input of age from user
+        System.out.println("enter your age  ");
+        Scanner sc = new Scanner(System.in);
+        int age=sc.nextInt();
+        
+        //checking eligibility 
+        if(age>=18)
+        {
+            
+            System.out.println("you are eligible for voting");
+        }
+        else 
+        {
+            System.out.println("you are not eligible for voting");
+        }
+        
+    }
+}
