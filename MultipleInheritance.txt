@@ -1,0 +1,71 @@
+//Wap a java program to implement the concept of multiple inheritance 
+//in this program we have taken three different interfaces name as Dollar,Pound,Yen.
+//We are going to implemnt these three interfaces in a single class called convert. in that class we are converting Rupees to different currencies.
+
+//This is the interface Dollar
+package multipleinheritance;
+
+public interface Dollar {
+	public void RupeesDollar();
+}
+
+//This is the interface pounds
+
+package multipleinheritance;
+
+public interface Pounds {
+	public void RupeesPound();
+}
+
+//This is the interface Yen
+
+package multipleinheritance;
+
+public interface Yen {
+	public void RupeesYen();
+}
+
+//Now we are Defining a class. in that class we are going to implement these three interfaces
+
+package multipleinheritance;
+import java.util.*;
+public class Convert implements Dollar,Pounds,Yen {
+
+	public static void main(String[] args) {
+		Convert obj=new Convert();
+		obj.RupeesDollar();
+		obj.RupeesPound();
+		obj.RupeesYen();
+	}
+	@Override
+	public void RupeesDollar()
+	{
+		double rs,dollar;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the Rupees =");
+		rs=sc.nextDouble();
+		 
+		dollar=rs/82.87;
+		System.out.println("Rupees to Dollar conversion ="+dollar);
+		
+	}
+	public void RupeesPound()
+	{
+		double rs,pound;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the rupees = ");
+		rs=sc.nextDouble();
+		
+		pound=rs/91;
+		System.out.println("Rupees to Pound conversion = "+pound);
+	}
+	public void RupeesYen()
+	{
+		double rs,yen;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the rupees =");
+		rs=sc.nextDouble();
+		yen=rs/0.56;
+		System.out.println("Rupees to yen Conversion ="+yen);
+	}
+}
