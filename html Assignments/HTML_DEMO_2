@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<head>
+    <h1>  hello sanket talking too you all</h1> 
+<title>
+this is a page demonstrating multiple file </title>
+</head>
+<body>
+    <form id="form1">
+        <label for="phone">Enter your phone</label>
+        <input type="tel" id="phone" name="phone" 
+               placeholder="123-45-6789"
+               pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}" required>
+    </form>
+    <label for="lname">Last name</label>
+    <input type="text" id="lname" name="lname" form="form1"
+</body>
